@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite thread-count="3" parallel="classes" name="suite"> -->
+	<suite thread-count="3" name="test"> 
+	<test name="parametersTest1">
+		<parameter name="username" value="mngr523164" />
+		<parameter name="password" value="tavEpAd" />
+		<classes>
+			<class name="com.guru99seleniumproj.tests.Login" /> 
+		</classes>
+	</test> <!--Test -->
+
+</suite> <!--Suite -->
