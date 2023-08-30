@@ -16,7 +16,7 @@ public class BaseConfiguration {
 	
 	@BeforeTest
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver","./dri/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);	
 	}
