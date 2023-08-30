@@ -10,8 +10,8 @@ pipeline {
     stages {
         stage('Run Test Automation Suite') {
             steps {
-                 def dockerHome = tool 'myDocker'
-                env.PATH = "${dockerHome}/bin:${env.PATH}"
+                sh 'def dockerHome = tool "myDocker"'
+                sh 'env.PATH = "${dockerHome}/bin:${env.PATH}"'
                 sh 'mvn clean verify'
             }
         }
